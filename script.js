@@ -3,7 +3,7 @@ var dropzone = new Dropzone('#demo-upload', {
   parallelUploads: 2,
   thumbnailHeight: 120,
   thumbnailWidth: 120,
-  maxFilesize: 3,
+  maxFilesize: 100,
   filesizeBase: 1000,
   thumbnail: function(file, dataUrl) {
     if (file.previewElement) {
