@@ -1,171 +1,22 @@
-html {
-  font-size: 10px;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  padding: 10px;
+    background: rgb(243, 244, 245);
+    height: 100%;
+    color: rgb(100, 108, 127);
+    line-height: 1.4rem;
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  margin: 1.5rem 0rem;
-}
+h1 { text-align: center; }
 
-h1 {
-  font-size: 2.8rem;
-  margin: 0;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2.8rem;
-  margin: 1.5rem 0;
-}
-
-h3 {
-  font-size: 2.1rem;
-  margin: 1rem 0rem;
-  text-align: center;
-}
-
-h4 {
-  font-size: 1.8rem;
-}
-
-h5 {
-  font-size: 1.3rem;
-}
-
-h6 {
-  font-size: 1.0rem;
-}
-
-p {
-  margin: 0rem 0rem 2.4rem 0rem;
-  line-height: 150%;
-}
-
-ul,
-ol {
-  margin-left: 25px;
-  margin-bottom: 15px;
-  line-height: 150%;
-}
-/*clearfixes*/
-
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-div {
-  margin: 0;
-}
-
-div {
-  margin: 0rem;
-}
-
-.page {
-  max-width: 700px;
-  margin: 0px auto;
-}
-/*drag onto website specific styles*/
-
-.dnd-onto-website .container {
-  width: 48%;
-  float: left;
-  margin: 0% 1% 2% 1%;
-}
-
-.dnd-onto-website .container-drop {
-  min-height: 300px;
-  background: #eee;
-  border: solid 2px #ddd;
-  padding: 15px;
-  transition: all 300ms ease-in;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.dnd-onto-website .container-drop.drop-active {
-  border: dashed 2px #ccc;
-  background: #efefef;
-}
-
-.dnd-onto-website .container-drop:before {
-  content: '\f019';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  top: calc(50% - 40px);
-  left: calc(50% - 40px);
-  font-family: fontawesome;
-  width: 80px;
-  height: 80px;
-  font-size: 80px;
-  line-height: 80px;
-  color: #ccc;
-  transition: all 300ms ease-in;
-  z-index: 1;
-}
-
-.dnd-onto-website .container-drop.drop-active:before {
-  color: #aaa;
-}
-
-.dnd-onto-website .container-drop img {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 2;
-}
-
-.dnd-onto-website .message-container {
-  word-break: break-all;
-  margin-bottom: 20px;
-}
-
-.dnd-onto-website .message-container.active {
-  border: solid 1px #ccc;
-  padding: 15px;
-}
-
-.ie-message {
-  display: none;
-  padding: 15px;
-  background: #e74c3c;
-  color: #fff;
-  border: dashed 2px #c0392b;
-  margin-bottom: 15px;
+.dropzone {
+    background: white;
+    border-radius: 5px;
+    border: 2px dashed rgb(0, 135, 247);
+    border-image: none;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
